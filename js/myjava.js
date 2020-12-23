@@ -2,7 +2,6 @@ var let='abcdefghijklmnopqrstuvwxyz'
 var LET='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 var num='0123456789'
 var spc=' !"#$%&\'()*+,-./:;<=>?@[\]^_`{|}~'
-
 function getRandom(choices) {
     var rand = Math.floor(Math.random()*choices.length);
     console.log(rand);
@@ -13,19 +12,12 @@ function toContinue(pass, confirm) {
     if (confirm==pass) ;
     else toContinue(pass, confirm);
 }
-
-
 function tumble() {
     let lower = document.getElementById('lower').checked;
     let upper = document.getElementById('upper').checked;
     let number = document.getElementById('number').checked;
     let special = document.getElementById('special').checked;
     let chars = document.getElementById('length').value; 
-    console.log(`Lower: ${lower}`);
-    console.log(`Upper: ${upper}`);
-    console.log(`Numbers: ${number}`);
-    console.log(`Special chars: ${special}`);
-    console.log(`Length: ${chars}`);
     var choices ='';
     var pass='';
     if (lower==false && upper==false && number==false && special==false) {
@@ -40,10 +32,7 @@ function tumble() {
             pass += getRandom(choices);
         }  
         toContinue(pass, confirm);
-
     }
-    console.log(`Choices: ${choices}`);
-    console.log(`Password: ${pass}`);
 }
 
 

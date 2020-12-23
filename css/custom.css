@@ -1,5 +1,5 @@
 body{
-    background-color: #bebebe;
+    background-color: #3f424b;
 }
 .carcaplow {
     position: static;
@@ -11,11 +11,26 @@ body{
 #background {
     background-image: url('key.jpg');
     min-height: 100vh;
+    background-origin: inherit;
 }
 #qr {
-
+    margin-top: -50px;
 }
 #support {
+    margin-top: 15vh;
+}
+#s {
+    font-family: 'Shadows Into Light', cursive;
+}
+#v {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 28px;
+    font-weight: bold;
+    color: red;
+}
 
-
+@media only screen and (max-width: 500px) {
+    #background {
+        background-position-x: -60px;
+    }
 }
