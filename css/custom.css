@@ -8,9 +8,14 @@ body{
 .icon-color {
     background-color:#94536d !important;
 }
+#background {
+    background-image: url('key.jpg');
+    min-height: 100vh;
+}
 #qr {
-    margin-top: -75px;
+
 }
 #support {
-    margin-top: 15vh;
+
+
 }

@@ -15,100 +15,113 @@
     <link rel='stylesheet' href='css/custom.css' />
   </head>
   <body>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <!-- Container wrapper -->
-      <div class="container-fluid">
-        <!-- Navbar brand -->
-        <a class="navbar-brand" href="index.html">SprengerV</a>
-
-        <!-- Toggle button -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-mdb-toggle="collapse"
-          data-mdb-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
-
-        <!-- Collapsible wrapper -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- Left links -->
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="donate.html">Donate</a>
-            </li>
-            <!-- Navbar dropdown -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-mdb-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <!-- Dropdown menu -->
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
-                >Disabled</a
-              >
-            </li>
-          </ul>
-          <!-- Left links -->
-
-          <!-- Search form -->
-          <form class="d-flex input-group w-auto">
+    <!-- BG image wrapper -->
+    <div id='background' class='bg-cover'>
+      <main class='container col-10'>
+        <!-- Password options -->
+        <form class='row d-flex justify-content-start'>
+          <!-- Lowercase checkbox -->
+          <div class="form-check col-sm-6 d-flex justify-content-start">
             <input
-              type="search"
-              class="form-control"
-              placeholder="Type query"
-              aria-label="Search"
+              class="form-check-input"
+              type="checkbox"
+              value="1"
+              id="lower"
+              checked
             />
-            <button
-              class="btn btn-outline-primary"
-              type="button"
-              data-mdb-ripple-color="dark"
-            >
-              Search
-            </button>
-          </form>
+            <label class="form-check-label text-light" for="lower">
+              Lowercase
+            </label>
+          </div>
+          <!-- Uppercase checkbox -->
+          <div class="form-check col-sm-6 d-flex justify-content-start">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="1"
+              id="upper"
+            />
+            <label class="form-check-label text-light" for="upper">
+              Uppercase
+            </label>
+          </div>
+          <!-- Numbers checkbox -->
+          <div class="form-check col-sm-6 d-flex justify-content-start">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="1"
+              id="number"
+            />
+            <label class="form-check-label text-light" for="number">
+              Numbers
+            </label>
+          </div>
+          <!-- Special checkbox -->
+          <div class="form-check col-sm-6 d-flex justify-content-start">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="1"
+              id="special"
+            />
+            <label class="form-check-label text-light" for="special">
+              Special Characters
+            </label>
+          </div>
+          <!-- Length slider -->
+          <div class='col-12 col-md-6 col-lg-4'>
+            <label class="form-label text-light" for="length">Password Length:</label>
+            <div class="range">
+              <input type="range" class="form-range" min="8" max="128" value=8 id="length" />
+            </div>
+          </div>
+        </form>
+        <!-- Password optiona -->
+        <button type='button' class='btn-outline-primary disabled col-12 col-md-6 col-lg-4' onclick="tumble()">
+          TUMBLE!
+        </button>
+      </main>
+      <!-- Navbar/footer -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-bottom">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Navbar brand -->
+          <a class="navbar-brand" href="index.html">SprengerV</a>
+
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Left links -->
+            <ul class="navbar-nav ms-auto me-0 mb-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="donate.html">Donate</a>
+              </li>
+            </ul>
+            <!-- Left links -->
+          </div>
+          <!-- Collapsible wrapper -->
         </div>
-        <!-- Collapsible wrapper -->
-      </div>
-      <!-- Container wrapper -->
-    </nav>
-    <!-- Navbar -->
+        <!-- Container wrapper -->
+      </nav>
+      <!-- Navbar -->
 
-    <!-- Footer -->
-    <footer class="bg-dark text-center text-lg-start w-100 position-absolute bottom-0">
-      <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        © 2020 Copyright:
-        <a class="text-light" href="http://sprengerv.com/">SprengerV.com</a>
-      </div>
-      <!-- Copyright -->
-    </footer>
-
+    </div>
   </body>
 
   <!-- MDB -->

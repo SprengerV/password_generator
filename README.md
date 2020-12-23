@@ -1,5 +1,1 @@
-MDB5
-Version: FREE 3.0.0
-
-Documentation:
-https://mdbootstrap.com/docs/standard/
+This project sets to create a password generator that generates random passwords within parameters set forth by the end user. These parameters include password length and whether or not the password is to contain lowercase letters, uppercase letters, numbers, and/or special characters. After selecting the parameters for their password, the user is to be able to press a button and have a randomly generated password of 8-128 characters in length alert onscreen.
