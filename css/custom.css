@@ -5,6 +5,9 @@ body{
     position: static;
     y: -500;
 }
+.fas {
+    margin-bottom: 10px;
+}
 .icon-color {
     background-color:#94536d !important;
 }
@@ -12,6 +15,11 @@ body{
     background-image: url('key.jpg');
     min-height: 100vh;
     background-origin: inherit;
+}
+#keygen {
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(0, 102, 255);
+    margin-top: 10px;
 }
 #qr {
     margin-top: -50px;
@@ -21,12 +29,14 @@ body{
 }
 #s {
     font-family: 'Shadows Into Light', cursive;
+    margin-bottom: 10px;
 }
 #v {
     font-family: 'Abril Fatface', cursive;
     font-size: 28px;
     font-weight: bold;
     color: red;
+    margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 500px) {
