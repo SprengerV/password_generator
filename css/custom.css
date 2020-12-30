@@ -39,7 +39,7 @@ body{
     margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1170px) {
     #background {
         background-position-x: -60px;
     }
